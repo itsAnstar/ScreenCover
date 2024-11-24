@@ -1,8 +1,21 @@
 [package]
-name = "ScreenCover"
+name = "screen_cover"
 version = "0.1.0"
 edition = "2021"
+default-run = "screen_cover"
+
+[[bin]]
+name = "screen_cover"
+path = "src/main.rs"
+
+[[bin]]
+name = "mac_aarch64"
+path = "src/bin/mac_aarch64.rs"
+
+[[bin]]
+name = "x86_64"
+path = "src/bin/x86_64.rs"
 
 [dependencies]
-winit = "0.30.5"
-rdev = "0.5.3"
+winit = "0.29"
+rdev = "0.5"
